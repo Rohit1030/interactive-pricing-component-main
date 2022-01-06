@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive-pricing-component-main</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+    <div class="card-container">
+        <div class="slider-container">
+            <div class="cta-text"></div>
+            <div class="mob-slider">
+                <input type="range" value="0" min="0" max="100" id="range" step="20">
+            </div>
+            <div class="show-amount"><span class="amount"></span><span class="month-text"> / month</span></div>
+        </div>
+        <div class="desk-slider">
+            <input type="range" value="0" min="0" max="100" id="Range" step="20">
+        </div>
+        <div class="toggle-billing">
+            <span class="month">Monthly Billing</span>
+            <div class="toggle-btn">
+                <div class="circle"></div>
+            </div>
+            <span class="year">Yearly Billing</span>
+            <span class="discount">25% discount</span>
+        </div>
+        <div class="btn-n-facilities">
+            <div class="facilities">
+                <div class="facility">Unlimited websites</div>
+                <div class="facility">100% data ownership</div>
+                <div class="facility">Email reports</div>
+            </div>
+            <button class="btn-trial">Start my trial</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
